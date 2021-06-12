@@ -1,4 +1,3 @@
-
 #!/bin/bash
 
 
@@ -15,6 +14,4 @@ for i in *.snpEFF.ann.vcf; do
      java -jar /home/binita/snpEff/SnpSift.jar extractFields ${F}.filtered.vcf CHROM POS REF ALT VARTYPE QUAL FILTER DP AF SB "ANN[0].GENE" "EFF[0].EFFECT" "EFF[0].IMPACT" "EFF[0].BIOTYPE" > ${F}.snpsift.tsv;
 
 done
-
-
 
