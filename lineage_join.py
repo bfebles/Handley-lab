@@ -3,7 +3,7 @@
 
 
 import os
-from pathlib2 import Path
+from pathlib import Path
 import pandas as pd
 
 cwd = os.getcwd()
