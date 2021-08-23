@@ -10,5 +10,5 @@ outdir = str(path.parent)
 
 with open ("filtered_seq.fa", 'w') as out_handle:
     for record in SeqIO.parse("final_sequences.fa", "fasta"):
-        if record.seq.count('N')<= 9000:
+        if record.seq.count('N')<= 10000:
             out_handle.write(record.format("fasta"))
